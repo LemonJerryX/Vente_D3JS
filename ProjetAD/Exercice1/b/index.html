@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>La répartition des ventes individuelles pour un client sélectionné de manière interactive</title>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+    <!--    Correspond à  script.js ligne 23 => 'd3.select("#client").html(inputValue);'  -->
+    <h1>La répartition des ventes individuelles pour le client <div id="client"></div></h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-md-10 col-lg-10">
+            <svg id="svg1" width="1000" height="600" font-family="sans-serif" font-size="10" text-anchor="middle"
+                 viewBox="0 0 1000 600"
+                 preserveAspectRatio="xMinYMin meet"></svg>
+        </div>
+        <div class="col-xs-12 col-md-2 col-lg-2" id="div_input">
+            <div id="input"></div>
+        </div>
+    </div>
+    <div class="row m-5">
+        <div class="col-12" >
+            <p id="som" class="text-center"></p>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

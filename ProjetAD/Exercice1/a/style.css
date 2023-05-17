@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Raleway', sans-serif;
+}
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: 190px;
+    padding: 10px;
+    font-size: 0.9em;
+    background: #96281b;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+    top: 10px;
+    left: 10px;
+    color: #FFFFFF;
+}
+
+svg {
+    max-width: 100%;
+    overflow: hidden;
+    top: 60px;
+    width: 100%;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+}
+
+#container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+circle {
+    cursor: pointer;
+}
+
+circle:hover {
+    opacity: 0.7;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: -30px;
+    font-size: 26px;
+    font-weight: bold;
+}
